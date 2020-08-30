@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survivor Slide Puzzle</title>
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+<body>
+    
+    <center><div id = "shuffle">
+        <button onClick = "shuffle()">SHUFFLE BOARD</button>
+    </div></center>
+    
+    <div class = "board">
+        <table class = "game">
+            <tr>
+                <th>
+                    <div id = "cell11" onClick="checkValidMove(1,1);"></div>
+                <th>
+                    <div id = "cell12" onClick="checkValidMove(1,2);"></div>
+                <th>
+                    <div id = "cell13" onClick="checkValidMove(1,3);"></div>
+                <th>
+                    <div id = "cell14" onClick="checkValidMove(1,4);"></div>
+            </tr>
+            <tr>
+                <th>
+                    <div id = "cell21" onClick="checkValidMove(2,1);"></div>
+                <th>
+                    <div id = "cell22" onClick="checkValidMove(2,2);"></div>
+                <th>
+                    <div id = "cell23" onClick="checkValidMove(2,3);"></div>
+                <th>
+                    <div id = "cell24" onClick="checkValidMove(2,4);"></div>
+            </tr>
+            <tr>
+                <th>
+                    <div id = "cell31" onClick="checkValidMove(3,1);"></div>
+                <th>
+                    <div id = "cell32" onClick="checkValidMove(3,2);"></div>
+                <th>
+                    <div id = "cell33" onClick="checkValidMove(3,3);"></div>
+                <th>
+                    <div id = "cell34" onClick="checkValidMove(3,4);"></div>
+            </tr>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

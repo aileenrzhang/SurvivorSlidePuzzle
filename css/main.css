@@ -1,0 +1,125 @@
+.tile1 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: 0px 0px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile2 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: -320px 0px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile3 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: -640px 0px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile4 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: -960px 0px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile5 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: 0px -240px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile6 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: -320px -240px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile7 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: -640px -240px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile8 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: -960px -240px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile9 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: 0px -480px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile10 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: -320px -480px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile11 {
+    width: 320px;
+    height: 240px;
+    background: url(wawLogo.jpg);
+    background-position: -640px -480px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+}
+
+.tile12 {
+    width: 320px;
+    height: 240px;
+    background: white;
+    border: 1px solid #FFFFFF;
+    
+}
+
+table.game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 60px;
+    z-index:-1;
+}
+
+button {
+    padding:20px, 20px;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+

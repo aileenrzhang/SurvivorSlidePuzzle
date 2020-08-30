@@ -2,9 +2,9 @@
 
 This website is a slide puzzle game, modelled after those seen on the TV show "Survivor". Built entirely with HTML, CSS, and JavaScript.
 
-### How to run
+## How to run
 
-To run this on your laptop/computer, you can fork and pull this repository. Then, go into your file explorer, right click on the index.html file and open with Google Chrome, Firefox, or a similar web explorer.
+You can go to [this website](https://aileenrzhang.github.io/SurvivorSlidePuzzle/) to try the game out. To run this on your laptop/computer, you can fork and pull this repository. Then, go into your file explorer, right click on the index.html file and open with Google Chrome, Firefox, or a similar web explorer.
 
 ## Built With
 

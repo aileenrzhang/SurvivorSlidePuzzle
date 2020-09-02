@@ -6,6 +6,8 @@ function checkWin() {
     var classes = ['tile1', 'tile2', 'tile3', 'tile4', 'tile5', 'tile6', 'tile7', 'tile8', 'tile9', 'tile10', 'tile11', 'tile12']
     var ids = ['cell11', 'cell12', 'cell13', 'cell14', 'cell21', 'cell22', 'cell23', 'cell24', 'cell31', 'cell32', 'cell33', 'cell34']
     
+    
+    // checks if each location has the correct tile there
     for (var i = 0; i < 12; i++){
         if (document.getElementById(ids[i]).className != classes[i]){
             return;
@@ -38,9 +40,12 @@ function checkValidMove(row, column) {
     
     var whiteCell = document.querySelector('.tile12').id;
     
+    // Uses the ID of the white tile to figure out its location
     var rowWhiteCell = parseInt(whiteCell.charAt(4), 10);
     var colWhiteCell = parseInt(whiteCell.charAt(5), 10);
     
+    
+    //checks if the white tile is either above, below, to the left, or to the right of the clicked tile
     if (Math.abs(rowWhiteCell - row) == 1 && colWhiteCell == column) {
         moveTile(row, column);
         checkWin();
@@ -75,29 +80,36 @@ function shuffle() {
     var rowWhiteCell;
     var colWhiteCell;
     
+    // Moves one of the tiles next to the white tile 1000 tiles to randomize the tiles
     for (var i = 0; i < 1000; i++){
         whiteCell = document.querySelector('.tile12').id;
     
         rowWhiteCell = parseInt(whiteCell.charAt(4), 10);
         colWhiteCell = parseInt(whiteCell.charAt(5), 10);
         
+        // Decides whether the row or the column of the white tile is going to change
+        // This process ensures that we do not end up with an unsolveable puzzle
         choose = Math.floor(Math.random() * 2)
         
         if (choose == 0){
+            // Randomly chooses one of the tiles either above or below the white tile to move
+            
             if (rowWhiteCell == 1){
-                row = rowWhiteCell + Math.floor(Math.random() * 2);
+                row = 2;
             } else if (rowWhiteCell == 3){
-                row = rowWhiteCell + Math.floor(Math.random() * 2 - 1);
+                row = 2;
             } else {
                 row = rowWhiteCell + Math.floor(Math.random() * 3 - 1);
             }
             
             col = colWhiteCell;
         } else if (choose == 1){
+            // Randomly chooses one of the tiles to either the left or right of the white tile to move
+            
             if (colWhiteCell == 1){
-                col = colWhiteCell + Math.floor(Math.random() * 2);
+                col = 2;
             } else if (colWhiteCell == 4){
-                col = colWhiteCell + Math.floor(Math.random() * 2 - 1);
+                col = 3;
             } else {
                 col = colWhiteCell + Math.floor(Math.random() * 3  - 1);
             }
